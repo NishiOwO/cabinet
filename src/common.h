@@ -6,7 +6,10 @@
 #include "stb_ds.h"
 
 #ifdef DEBUG
-#define LOG(...) fprintf(stderr, "[cabinet] ");fprintf(stderr, __VA_ARGS__);fprintf(stderr, "\n")
+#define LOG(...) \
+	fprintf(stderr, "[cabinet] "); \
+	fprintf(stderr, __VA_ARGS__); \
+	fprintf(stderr, "\n")
 #else
 #define LOG(...)
 #endif

@@ -10,7 +10,7 @@ EXEC =
 
 include mk/$(P).mk
 
-.PHONY: all clean
+.PHONY: all format clean
 .SUFFIXES: .c .o .rc .res
 
 all: cabinet$(EXEC)
@@ -23,6 +23,9 @@ cabinet$(EXEC): $(OBJS)
 
 .rc.res:
 	$(RC) -O coff $< $@
+
+format:
+	clang-format --verbose -i `find src '(' -name "*.c" -or -name "*.h" ')' -and -not -name "stb_ds.h"`
 
 clean:
 	rm -f cabinet cabinet.exe src/*.o src/*/*.o src/*.res
