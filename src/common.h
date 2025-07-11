@@ -3,7 +3,10 @@
 
 #include <stdio.h>
 
-#include "stb_ds.h"
+#include "stb/stb_ds.h"
+#include "stb/stb_image.h"
+
+#include "pcre/pcre.h"
 
 #ifdef DEBUG
 #define LOG(...) \
