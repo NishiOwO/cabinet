@@ -1,3 +1,4 @@
 *.o
 *.res
-/cabinet.*
+/cabinet.exe
+/cabinet

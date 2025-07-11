@@ -5,7 +5,7 @@ CFLAGS = -O2
 LDFLAGS =
 LIBS =
 
-OBJS = src/main.o
+OBJS = src/main.o src/ds.o
 EXEC =
 
 include mk/$(P).mk
