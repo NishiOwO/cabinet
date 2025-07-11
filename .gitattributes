@@ -3,3 +3,4 @@ pcre_*.c linguist-generated
 pcre_*.h linguist-generated
 pcre.h linguist-generated
 config.h linguist-generated
+ucp.h linguist-generated
